@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A3875B41968796800179B70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B31968796800179B70 /* Foundation.framework */; };
+		0A3875B61968796800179B70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B51968796800179B70 /* CoreGraphics.framework */; };
+		0A3875B81968796800179B70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B71968796800179B70 /* UIKit.framework */; };
+		0A3875BE1968796800179B70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A3875BC1968796800179B70 /* InfoPlist.strings */; };
+		0A3875C01968796800179B70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3875BF1968796800179B70 /* main.m */; };
+		0A3875C41968796800179B70 /* JMKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3875C31968796800179B70 /* JMKAppDelegate.m */; };
+		0A3875C71968796800179B70 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3875C51968796800179B70 /* Main_iPhone.storyboard */; };
+		0A3875CA1968796800179B70 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3875C81968796800179B70 /* Main_iPad.storyboard */; };
+		0A3875CD1968796800179B70 /* JMKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3875CC1968796800179B70 /* JMKViewController.m */; };
+		0A3875CF1968796800179B70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3875CE1968796800179B70 /* Images.xcassets */; };
+		0A3875D61968796800179B70 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875D51968796800179B70 /* XCTest.framework */; };
+		0A3875D71968796800179B70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B31968796800179B70 /* Foundation.framework */; };
+		0A3875D81968796800179B70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B71968796800179B70 /* UIKit.framework */; };
+		0A3875E01968796800179B70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A3875DE1968796800179B70 /* InfoPlist.strings */; };
+		0A3875E21968796800179B70 /* BT_DashboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3875E11968796800179B70 /* BT_DashboardTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A3875D91968796800179B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A3875A81968796800179B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A3875AF1968796800179B70;
+			remoteInfo = "BT Dashboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A3875B01968796800179B70 /* BT Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BT Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3875B31968796800179B70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A3875B51968796800179B70 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0A3875B71968796800179B70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0A3875BB1968796800179B70 /* BT Dashboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BT Dashboard-Info.plist"; sourceTree = "<group>"; };
+		0A3875BD1968796800179B70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A3875BF1968796800179B70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A3875C11968796800179B70 /* BT Dashboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BT Dashboard-Prefix.pch"; sourceTree = "<group>"; };
+		0A3875C21968796800179B70 /* JMKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMKAppDelegate.h; sourceTree = "<group>"; };
+		0A3875C31968796800179B70 /* JMKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMKAppDelegate.m; sourceTree = "<group>"; };
+		0A3875C61968796800179B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		0A3875C91968796800179B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		0A3875CB1968796800179B70 /* JMKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMKViewController.h; sourceTree = "<group>"; };
+		0A3875CC1968796800179B70 /* JMKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMKViewController.m; sourceTree = "<group>"; };
+		0A3875CE1968796800179B70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A3875D41968796800179B70 /* BT DashboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BT DashboardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3875D51968796800179B70 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0A3875DD1968796800179B70 /* BT DashboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BT DashboardTests-Info.plist"; sourceTree = "<group>"; };
+		0A3875DF1968796800179B70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A3875E11968796800179B70 /* BT_DashboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BT_DashboardTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A3875AD1968796800179B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3875B61968796800179B70 /* CoreGraphics.framework in Frameworks */,
+				0A3875B81968796800179B70 /* UIKit.framework in Frameworks */,
+				0A3875B41968796800179B70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3875D11968796800179B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3875D61968796800179B70 /* XCTest.framework in Frameworks */,
+				0A3875D81968796800179B70 /* UIKit.framework in Frameworks */,
+				0A3875D71968796800179B70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A3875A71968796800179B70 = {
+			isa = PBXGroup;
+			children = (
+				0A3875B91968796800179B70 /* BT Dashboard */,
+				0A3875DB1968796800179B70 /* BT DashboardTests */,
+				0A3875B21968796800179B70 /* Frameworks */,
+				0A3875B11968796800179B70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A3875B11968796800179B70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A3875B01968796800179B70 /* BT Dashboard.app */,
+				0A3875D41968796800179B70 /* BT DashboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A3875B21968796800179B70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A3875B31968796800179B70 /* Foundation.framework */,
+				0A3875B51968796800179B70 /* CoreGraphics.framework */,
+				0A3875B71968796800179B70 /* UIKit.framework */,
+				0A3875D51968796800179B70 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A3875B91968796800179B70 /* BT Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				0A3875C21968796800179B70 /* JMKAppDelegate.h */,
+				0A3875C31968796800179B70 /* JMKAppDelegate.m */,
+				0A3875C51968796800179B70 /* Main_iPhone.storyboard */,
+				0A3875C81968796800179B70 /* Main_iPad.storyboard */,
+				0A3875CB1968796800179B70 /* JMKViewController.h */,
+				0A3875CC1968796800179B70 /* JMKViewController.m */,
+				0A3875CE1968796800179B70 /* Images.xcassets */,
+				0A3875BA1968796800179B70 /* Supporting Files */,
+			);
+			path = "BT Dashboard";
+			sourceTree = "<group>";
+		};
+		0A3875BA1968796800179B70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A3875BB1968796800179B70 /* BT Dashboard-Info.plist */,
+				0A3875BC1968796800179B70 /* InfoPlist.strings */,
+				0A3875BF1968796800179B70 /* main.m */,
+				0A3875C11968796800179B70 /* BT Dashboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A3875DB1968796800179B70 /* BT DashboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A3875E11968796800179B70 /* BT_DashboardTests.m */,
+				0A3875DC1968796800179B70 /* Supporting Files */,
+			);
+			path = "BT DashboardTests";
+			sourceTree = "<group>";
+		};
+		0A3875DC1968796800179B70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A3875DD1968796800179B70 /* BT DashboardTests-Info.plist */,
+				0A3875DE1968796800179B70 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A3875AF1968796800179B70 /* BT Dashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3875E51968796800179B70 /* Build configuration list for PBXNativeTarget "BT Dashboard" */;
+			buildPhases = (
+				0A3875AC1968796800179B70 /* Sources */,
+				0A3875AD1968796800179B70 /* Frameworks */,
+				0A3875AE1968796800179B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BT Dashboard";
+			productName = "BT Dashboard";
+			productReference = 0A3875B01968796800179B70 /* BT Dashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A3875D31968796800179B70 /* BT DashboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3875E81968796800179B70 /* Build configuration list for PBXNativeTarget "BT DashboardTests" */;
+			buildPhases = (
+				0A3875D01968796800179B70 /* Sources */,
+				0A3875D11968796800179B70 /* Frameworks */,
+				0A3875D21968796800179B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A3875DA1968796800179B70 /* PBXTargetDependency */,
+			);
+			name = "BT DashboardTests";
+			productName = "BT DashboardTests";
+			productReference = 0A3875D41968796800179B70 /* BT DashboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A3875A81968796800179B70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JMK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "John M. P. Knox";
+				TargetAttributes = {
+					0A3875D31968796800179B70 = {
+						TestTargetID = 0A3875AF1968796800179B70;
+					};
+				};
+			};
+			buildConfigurationList = 0A3875AB1968796800179B70 /* Build configuration list for PBXProject "BT Dashboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A3875A71968796800179B70;
+			productRefGroup = 0A3875B11968796800179B70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A3875AF1968796800179B70 /* BT Dashboard */,
+				0A3875D31968796800179B70 /* BT DashboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A3875AE1968796800179B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3875CA1968796800179B70 /* Main_iPad.storyboard in Resources */,
+				0A3875CF1968796800179B70 /* Images.xcassets in Resources */,
+				0A3875C71968796800179B70 /* Main_iPhone.storyboard in Resources */,
+				0A3875BE1968796800179B70 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3875D21968796800179B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3875E01968796800179B70 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A3875AC1968796800179B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3875CD1968796800179B70 /* JMKViewController.m in Sources */,
+				0A3875C01968796800179B70 /* main.m in Sources */,
+				0A3875C41968796800179B70 /* JMKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3875D01968796800179B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3875E21968796800179B70 /* BT_DashboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A3875DA1968796800179B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A3875AF1968796800179B70 /* BT Dashboard */;
+			targetProxy = 0A3875D91968796800179B70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A3875BC1968796800179B70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A3875BD1968796800179B70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A3875C51968796800179B70 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A3875C61968796800179B70 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0A3875C81968796800179B70 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A3875C91968796800179B70 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0A3875DE1968796800179B70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A3875DF1968796800179B70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A3875E31968796800179B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A3875E41968796800179B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A3875E61968796800179B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BT Dashboard/BT Dashboard-Prefix.pch";
+				INFOPLIST_FILE = "BT Dashboard/BT Dashboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A3875E71968796800179B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BT Dashboard/BT Dashboard-Prefix.pch";
+				INFOPLIST_FILE = "BT Dashboard/BT Dashboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0A3875E91968796800179B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BT Dashboard.app/BT Dashboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BT Dashboard/BT Dashboard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BT DashboardTests/BT DashboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0A3875EA1968796800179B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BT Dashboard.app/BT Dashboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BT Dashboard/BT Dashboard-Prefix.pch";
+				INFOPLIST_FILE = "BT DashboardTests/BT DashboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A3875AB1968796800179B70 /* Build configuration list for PBXProject "BT Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3875E31968796800179B70 /* Debug */,
+				0A3875E41968796800179B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A3875E51968796800179B70 /* Build configuration list for PBXNativeTarget "BT Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3875E61968796800179B70 /* Debug */,
+				0A3875E71968796800179B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A3875E81968796800179B70 /* Build configuration list for PBXNativeTarget "BT DashboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3875E91968796800179B70 /* Debug */,
+				0A3875EA1968796800179B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A3875A81968796800179B70 /* Project object */;
+}
