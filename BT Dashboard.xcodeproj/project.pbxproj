@@ -22,6 +22,7 @@
 		0A3875D81968796800179B70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B71968796800179B70 /* UIKit.framework */; };
 		0A3875E01968796800179B70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A3875DE1968796800179B70 /* InfoPlist.strings */; };
 		0A3875E21968796800179B70 /* BT_DashboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3875E11968796800179B70 /* BT_DashboardTests.m */; };
+		0A3875EC19687A9400179B70 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875EB19687A9400179B70 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		0A3875DD1968796800179B70 /* BT DashboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BT DashboardTests-Info.plist"; sourceTree = "<group>"; };
 		0A3875DF1968796800179B70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A3875E11968796800179B70 /* BT_DashboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BT_DashboardTests.m; sourceTree = "<group>"; };
+		0A3875EB19687A9400179B70 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3875EC19687A9400179B70 /* CoreBluetooth.framework in Frameworks */,
 				0A3875B61968796800179B70 /* CoreGraphics.framework in Frameworks */,
 				0A3875B81968796800179B70 /* UIKit.framework in Frameworks */,
 				0A3875B41968796800179B70 /* Foundation.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		0A3875B21968796800179B70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A3875EB19687A9400179B70 /* CoreBluetooth.framework */,
 				0A3875B31968796800179B70 /* Foundation.framework */,
 				0A3875B51968796800179B70 /* CoreGraphics.framework */,
 				0A3875B71968796800179B70 /* UIKit.framework */,
