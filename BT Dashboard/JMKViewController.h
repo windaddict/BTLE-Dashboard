@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreBluetooth/CoreBluetooth.h>
+#import "JMKBluetoothManager.h"
 
-@interface JMKViewController : UIViewController <CBCentralManagerDelegate, CBPeripheralDelegate>
-@property (nonatomic, strong) dispatch_queue_t btDispatchQueue;
-@property (nonatomic, strong) CBCentralManager * centralManager;
+@interface JMKViewController : UIViewController  <JMKBluetoothManagerDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UITableView *peripheralTableView;
 
 @end

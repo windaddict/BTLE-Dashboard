@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A25BD85197AC7330043162A /* JMKBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25BD84197AC7330043162A /* JMKBluetoothManager.m */; };
 		0A3875B41968796800179B70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B31968796800179B70 /* Foundation.framework */; };
 		0A3875B61968796800179B70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B51968796800179B70 /* CoreGraphics.framework */; };
 		0A3875B81968796800179B70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B71968796800179B70 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A25BD83197AC7330043162A /* JMKBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKBluetoothManager.h; sourceTree = "<group>"; };
+		0A25BD84197AC7330043162A /* JMKBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKBluetoothManager.m; sourceTree = "<group>"; };
 		0A3875B01968796800179B70 /* BT Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BT Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3875B31968796800179B70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A3875B51968796800179B70 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +127,8 @@
 				0A3875C81968796800179B70 /* Main_iPad.storyboard */,
 				0A3875CB1968796800179B70 /* JMKViewController.h */,
 				0A3875CC1968796800179B70 /* JMKViewController.m */,
+				0A25BD83197AC7330043162A /* JMKBluetoothManager.h */,
+				0A25BD84197AC7330043162A /* JMKBluetoothManager.m */,
 				0A3875CE1968796800179B70 /* Images.xcassets */,
 				0A3875BA1968796800179B70 /* Supporting Files */,
 			);
@@ -261,6 +266,7 @@
 				0A3875CD1968796800179B70 /* JMKViewController.m in Sources */,
 				0A3875C01968796800179B70 /* main.m in Sources */,
 				0A3875C41968796800179B70 /* JMKAppDelegate.m in Sources */,
+				0A25BD85197AC7330043162A /* JMKBluetoothManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +481,7 @@
 				0A3875E71968796800179B70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A3875E81968796800179B70 /* Build configuration list for PBXNativeTarget "BT DashboardTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +490,7 @@
 				0A3875EA1968796800179B70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
