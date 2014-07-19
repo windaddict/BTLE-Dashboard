@@ -1,10 +1,14 @@
-//
-//  JMKViewController.h
-//  BT Dashboard
-//
-//  Created by John M. P. Knox on 7/5/14.
-//  Copyright (c) 2014 John M. P. Knox.
-/*
+# BTLE Dashboard
+
+A project for investigating and debugging the BTLE Peripherals near you. This project targets iOS7.
+
+## Licensing 
+
+This project is available under a GPL-3.0 license. See the LICENSE.txt file for details. For other licensing options, please write the author.
+
+http://www.movingavg.com
+
+
 BTLE Dashboard
 Copyright (C) 2014 John M. P. Knox
 
@@ -20,13 +24,3 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-#import <UIKit/UIKit.h>
-#import "JMKBluetoothManager.h"
-
-@interface JMKViewController : UIViewController  <JMKBluetoothManagerDelegate, UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (weak, nonatomic) IBOutlet UITableView *peripheralTableView;
-
-@end

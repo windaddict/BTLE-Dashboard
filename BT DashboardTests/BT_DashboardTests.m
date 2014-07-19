@@ -3,7 +3,7 @@
 //  BT DashboardTests
 //
 //  Created by John M. P. Knox on 7/5/14.
-//  Copyright (c) 2014 John M. P. Knox. All rights reserved.
+//  Copyright (c) 2014 John M. P. Knox.
 //
 
 #import <XCTest/XCTest.h>
