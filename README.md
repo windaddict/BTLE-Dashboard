@@ -1,6 +1,6 @@
 # BTLE Dashboard
 
-A project for investigating and debugging the BTLE Peripherals near you. This project targets iOS7.
+A project for investigating and debugging the BTLE (A.K.A. Bluetooth Low Energy, Bluetooth LE, Bluetooth Smart) Peripherals near you. This project targets iOS7.
 
 ## Licensing 
 

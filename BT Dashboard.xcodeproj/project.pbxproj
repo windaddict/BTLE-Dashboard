@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A25BD85197AC7330043162A /* JMKBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25BD84197AC7330043162A /* JMKBluetoothManager.m */; };
+		0A25BD8B197AF0C10043162A /* JMKPeripheralDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25BD8A197AF0C10043162A /* JMKPeripheralDetailViewController.m */; };
+		0A25BD8F197B08870043162A /* JMKPeripheralDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25BD8D197B08870043162A /* JMKPeripheralDetailCell.m */; };
+		0A25BD90197B08870043162A /* JMKPeripheralDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A25BD8E197B08870043162A /* JMKPeripheralDetailCell.xib */; };
 		0A3875B41968796800179B70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B31968796800179B70 /* Foundation.framework */; };
 		0A3875B61968796800179B70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B51968796800179B70 /* CoreGraphics.framework */; };
 		0A3875B81968796800179B70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3875B71968796800179B70 /* UIKit.framework */; };
@@ -39,6 +42,11 @@
 /* Begin PBXFileReference section */
 		0A25BD83197AC7330043162A /* JMKBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKBluetoothManager.h; sourceTree = "<group>"; };
 		0A25BD84197AC7330043162A /* JMKBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKBluetoothManager.m; sourceTree = "<group>"; };
+		0A25BD89197AF0C10043162A /* JMKPeripheralDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKPeripheralDetailViewController.h; sourceTree = "<group>"; };
+		0A25BD8A197AF0C10043162A /* JMKPeripheralDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKPeripheralDetailViewController.m; sourceTree = "<group>"; };
+		0A25BD8C197B08870043162A /* JMKPeripheralDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKPeripheralDetailCell.h; sourceTree = "<group>"; };
+		0A25BD8D197B08870043162A /* JMKPeripheralDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKPeripheralDetailCell.m; sourceTree = "<group>"; };
+		0A25BD8E197B08870043162A /* JMKPeripheralDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMKPeripheralDetailCell.xib; sourceTree = "<group>"; };
 		0A3875B01968796800179B70 /* BT Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BT Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3875B31968796800179B70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A3875B51968796800179B70 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +129,11 @@
 		0A3875B91968796800179B70 /* BT Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				0A25BD8C197B08870043162A /* JMKPeripheralDetailCell.h */,
+				0A25BD8D197B08870043162A /* JMKPeripheralDetailCell.m */,
+				0A25BD8E197B08870043162A /* JMKPeripheralDetailCell.xib */,
+				0A25BD89197AF0C10043162A /* JMKPeripheralDetailViewController.h */,
+				0A25BD8A197AF0C10043162A /* JMKPeripheralDetailViewController.m */,
 				0A3875C21968796800179B70 /* JMKAppDelegate.h */,
 				0A3875C31968796800179B70 /* JMKAppDelegate.m */,
 				0A3875C51968796800179B70 /* Main_iPhone.storyboard */,
@@ -245,6 +258,7 @@
 				0A3875CF1968796800179B70 /* Images.xcassets in Resources */,
 				0A3875C71968796800179B70 /* Main_iPhone.storyboard in Resources */,
 				0A3875BE1968796800179B70 /* InfoPlist.strings in Resources */,
+				0A25BD90197B08870043162A /* JMKPeripheralDetailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3875CD1968796800179B70 /* JMKViewController.m in Sources */,
+				0A25BD8F197B08870043162A /* JMKPeripheralDetailCell.m in Sources */,
 				0A3875C01968796800179B70 /* main.m in Sources */,
 				0A3875C41968796800179B70 /* JMKAppDelegate.m in Sources */,
+				0A25BD8B197AF0C10043162A /* JMKPeripheralDetailViewController.m in Sources */,
 				0A25BD85197AC7330043162A /* JMKBluetoothManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

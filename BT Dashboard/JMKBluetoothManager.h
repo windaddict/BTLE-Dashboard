@@ -35,7 +35,8 @@
 @end
 
 @interface JMKBluetoothManager : NSObject <CBCentralManagerDelegate, CBPeripheralDelegate>
-@property (nonatomic, strong) NSMutableDictionary *peripherals;
+@property (nonatomic, strong) NSMutableDictionary *peripherals; ///< A dictionary of CBPeripherals with their identifier as key
+@property (nonatomic, strong) NSMutableDictionary *advertisedServices; ///< a dictionary with key peripheral.identifier. values are dictionaries
 
 -(void)startPeripheralScan;
 -(void)addDelegate: (id<JMKBluetoothManagerDelegate>) delegate;

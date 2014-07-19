@@ -16,31 +16,81 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="BTLE Dashboard" translatesAutoresizingMaskIntoConstraints="NO" id="a8E-wr-PDB">
-                                <rect key="frame" x="0.0" y="765" width="768" height="195"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="BTLE Dashboard" translatesAutoresizingMaskIntoConstraints="NO" id="a8E-wr-PDB">
+                                <rect key="frame" x="0.0" y="701" width="768" height="259"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="HCz-xJ-jzM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="STj-p1-Clv">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="STj-p1-Clv">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="693"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="a8E-wr-PDB" secondAttribute="bottom" id="EaK-5T-0Fa"/>
+                            <constraint firstAttribute="trailing" secondItem="a8E-wr-PDB" secondAttribute="trailing" id="FVd-y1-tMM"/>
+                            <constraint firstItem="a8E-wr-PDB" firstAttribute="top" secondItem="STj-p1-Clv" secondAttribute="bottom" constant="8" id="KyB-Zh-9Lw"/>
+                            <constraint firstItem="STj-p1-Clv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QOE-AU-PUD"/>
+                            <constraint firstItem="a8E-wr-PDB" firstAttribute="leading" secondItem="STj-p1-Clv" secondAttribute="leading" id="T0j-Be-7Cz"/>
+                            <constraint firstItem="a8E-wr-PDB" firstAttribute="top" secondItem="STj-p1-Clv" secondAttribute="bottom" constant="8" symbolic="YES" id="XRI-Y7-eAy"/>
+                            <constraint firstItem="a8E-wr-PDB" firstAttribute="trailing" secondItem="STj-p1-Clv" secondAttribute="trailing" id="k1c-Gx-ucD"/>
+                            <constraint firstItem="a8E-wr-PDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lwL-5g-Gsf"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="ahk-KM-bp1"/>
                     <connections>
                         <outlet property="peripheralTableView" destination="STj-p1-Clv" id="e5J-my-Tmb"/>
                         <outlet property="textView" destination="a8E-wr-PDB" id="3Ca-ry-HJG"/>
+                        <segue destination="Kk1-v2-mcV" kind="push" identifier="peripheralDetail" id="9I5-ga-R66"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="573" y="343"/>
+        </scene>
+        <!--Peripheral Detail View Controller-->
+        <scene sceneID="qnI-dB-lg2">
+            <objects>
+                <viewController id="Kk1-v2-mcV" customClass="JMKPeripheralDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EEt-qk-W6V"/>
+                        <viewControllerLayoutGuide type="bottom" id="EtV-RD-Vzf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mrq-QI-xRI">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="p36-nt-3CD">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p36-nt-3CD" firstAttribute="leading" secondItem="Mrq-QI-xRI" secondAttribute="leading" id="Fhe-RQ-5Ht"/>
+                            <constraint firstItem="p36-nt-3CD" firstAttribute="top" secondItem="Mrq-QI-xRI" secondAttribute="top" id="H3k-E0-XGj"/>
+                            <constraint firstAttribute="trailing" secondItem="p36-nt-3CD" secondAttribute="trailing" id="fle-qT-knS"/>
+                            <constraint firstAttribute="bottom" secondItem="p36-nt-3CD" secondAttribute="bottom" id="lWC-33-Eaa"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="elc-PN-PyC"/>
+                    <connections>
+                        <outlet property="detailTableView" destination="p36-nt-3CD" id="fik-O5-Cpe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8KG-xa-GIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="385"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="adi-nG-89I">

@@ -51,6 +51,7 @@
     self = [super init];
     if(self){
         self.peripherals = [NSMutableDictionary new];
+        self.advertisedServices = [NSMutableDictionary new];
         self.delegates = [NSMutableArray new];
         self.btDispatchQueue = dispatch_queue_create("btDispatchQueue", DISPATCH_QUEUE_SERIAL);
         self.isScanningForPeripherals = NO;
@@ -133,6 +134,7 @@
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI{
     [self logActivity:[NSString stringWithFormat:@"did discover peripheral: %@", peripheral.description]];
     self.peripherals[peripheral.identifier] = peripheral;
+    self.advertisedServices[peripheral.identifier] = advertisementData;
     
     for (NSString* key in [advertisementData allKeys]) {
         [self logActivity:[NSString stringWithFormat:@"Peripheral advertisement key: %@, Description: %@", key, [advertisementData[key] description]]];

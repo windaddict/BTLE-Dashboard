@@ -23,6 +23,7 @@
  */
 
 #import "JMKViewController.h"
+#import "JMKPeripheralDetailViewController.h"
 #import <CoreBluetooth/CBUUID.h>
 
 @interface JMKViewController ()
@@ -75,6 +76,25 @@ static const NSString *kJMKPeripheralCellReuseIdentifier = @"JMKPeripheralCell";
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if (sender == self) {
+        JMKPeripheralDetailViewController * detailVC = segue.destinationViewController;
+        detailVC.peripheral = [self peripheralForIndexPath:self.peripheralTableView.indexPathForSelectedRow];
+        detailVC.advertisementDictionary = [self advertisementDictionaryForPeripheralIdentifier:detailVC.peripheral.identifier];
+    }
+}
+
+- (CBPeripheral*)peripheralForIndexPath:(NSIndexPath *) indexPath{
+    NSString* key = [self.bluetoothManager.peripherals allKeys][indexPath.row];
+    CBPeripheral* peripheral = self.bluetoothManager.peripherals[key];
+    return peripheral;
+}
+
+- (NSDictionary*)advertisementDictionaryForPeripheralIdentifier:(NSUUID *) identifier{
+    NSDictionary *adDict = self.bluetoothManager.advertisedServices[identifier];
+    return adDict;
+}
+
 #pragma mark - JMKBluetoothManagerDelegate
 
 /**
@@ -91,6 +111,7 @@ static const NSString *kJMKPeripheralCellReuseIdentifier = @"JMKPeripheralCell";
 #pragma UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //TODO: drill down
+    [self performSegueWithIdentifier:@"peripheralDetail" sender:self];
 }
 
 #pragma UITableViewDataSource
@@ -104,8 +125,7 @@ static const NSString *kJMKPeripheralCellReuseIdentifier = @"JMKPeripheralCell";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:(NSString*)kJMKPeripheralCellReuseIdentifier];
-    NSString* key = [self.bluetoothManager.peripherals allKeys][indexPath.row];
-    CBPeripheral* peripheral = self.bluetoothManager.peripherals[key];
+    CBPeripheral* peripheral = [self peripheralForIndexPath:indexPath];
     [cell.textLabel setText:peripheral.name];
     return cell;
 }
